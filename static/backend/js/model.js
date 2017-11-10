@@ -61,6 +61,9 @@ Vue.component('model', {
             models[this.model.module + '\\' + this.model.name] = 'self';
             this.$emit('highlight', models);
         },
+        removeField: function (index) {
+            this.model.fields.splice(index, 1);
+        },
         appendField: function () {
             this.model.fields.push({
                 name: '',

@@ -17,7 +17,7 @@
             <input type="text" v-model="model.module" list="modules-datalist" placeholder="Модуль">
         </div>
         <div class="model-fields">
-            <field v-for="(field, key) in model.fields" :field="field" :index="key" :key="key"></field>
+            <field v-for="(field, key) in model.fields" :field="field" :index="key" :key="key" @remove="removeField"></field>
         </div>
         <div class="model-append">
             <a href="#" class="append button" @click.prevent="appendField">
