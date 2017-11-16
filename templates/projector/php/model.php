@@ -38,7 +38,7 @@ class {$name} extends Model
 {/foreach}
                 ],
 {/if}
-{if $field['attributesClean']}
+{if $field|safe_element:'attributesClean'}
 {foreach $field['attributesClean'] as $attributeName => $value}
                 "{$attributeName}" => {if $.php.is_numeric($value) || $attributeName == 'modelClass'}{$value}{else}"{$value}"{/if},
 {/foreach}

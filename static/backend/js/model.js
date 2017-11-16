@@ -27,8 +27,12 @@ Vue.component('model', {
             }
         },
         mousedown: function(e) {
-            this.drag = true;
-            this.$emit('dragstart', e, this.model);
+            if (e.shiftKey) {
+                this.$emit('clone', this.model);
+            } else {
+                this.drag = true;
+                this.$emit('dragstart', e, this.model);
+            }
         },
         mouseup: function(e) {
             this.drag = false;

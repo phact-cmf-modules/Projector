@@ -23,6 +23,7 @@ use Phact\Main\Phact;
 use Phact\Orm\Fields\BooleanField;
 use Phact\Orm\Fields\CharField;
 use Phact\Orm\Fields\DateField;
+use Phact\Orm\Fields\DateTimeField;
 use Phact\Orm\Fields\DecimalField;
 use Phact\Orm\Fields\FileField;
 use Phact\Orm\Fields\ForeignField;
@@ -92,7 +93,7 @@ class Scheme
                 'attributes' => self::getDateAttributes()
             ],
             'DateTimeField' => [
-                'class' => DateField::class,
+                'class' => DateTimeField::class,
                 'attributes' => self::getDateAttributes()
             ],
             'DecimalField' => [

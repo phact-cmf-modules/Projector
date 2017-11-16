@@ -140,7 +140,7 @@
 <script id="scheme-template" type="text/html">
     <div class="scheme-editor-wrapper">
         <div class="scheme-editor" @mousemove="mousemove" @mouseup="mouseup">
-            <model v-for="(model, key) in models" :model="model" :key="key" :index="key" @dragstart="dragstart" @remove="remove" @highlight="highlight"></model>
+            <model v-for="(model, key) in models" :model="model" :key="key" :index="key" @dragstart="dragstart" @remove="remove" @highlight="highlight" @clone="clone"></model>
         </div>
         <div class="hide">
             <datalist id="modules-datalist">

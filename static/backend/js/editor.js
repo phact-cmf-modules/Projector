@@ -36,6 +36,12 @@ Vue.component('editor', {
             this.drag.position.left = $frame.scrollLeft() + pos.left;
             this.drag.position.top = $frame.scrollTop() + pos.top;
         },
+        clone: function (model) {
+            var m = JSON.parse(JSON.stringify(model));
+            m.coordinates.x += 30;
+            m.coordinates.y += 30;
+            this.models.push(m);
+        },
         mouseup: function (e, model) {
             if (this.drag.drag) {
                 this.drag.drag = false;
