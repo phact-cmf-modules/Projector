@@ -1,3 +1,4 @@
+if (window.Vue) {
 Vue.component('field', {
     template: document.getElementById('field-template').innerHTML,
     props: ['field', 'index'],
@@ -95,3 +96,4 @@ Vue.component('field', {
         }
     }
 });
+}

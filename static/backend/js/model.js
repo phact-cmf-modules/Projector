@@ -1,3 +1,4 @@
+if (window.Vue) {
 Vue.component('model', {
     template: document.getElementById('model-template').innerHTML,
     props: ['model', 'index'],
@@ -89,3 +90,4 @@ Vue.component('model', {
         this.selfCheck();
     }
 });
+}

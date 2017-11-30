@@ -1,3 +1,4 @@
+if (window.Vue) {
 Vue.component('editor', {
     template: document.getElementById('scheme-template').innerHTML,
     props: ['models', 'fields', 'modules'],
@@ -143,3 +144,4 @@ Vue.component('editor', {
         }
     }
 });
+}
