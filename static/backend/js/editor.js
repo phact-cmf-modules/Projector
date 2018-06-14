@@ -124,13 +124,12 @@ Vue.component('editor', {
             });
         }).trigger('resize');
 
-        $(window).on('keypress', function (e) {
-
-            if (e.key == "n" && e.ctrlKey) {
+        $(window).on('keydown', function (e) {
+            if (e.keyCode == 78 && e.ctrlKey) {
                 vm.appendModel();
             }
 
-            if (e.key == "S" && e.ctrlKey && e.shiftKey) {
+            if (e.keyCode == 83 && e.ctrlKey && e.shiftKey) {
                 vm.saveData(true);
             }
         });
