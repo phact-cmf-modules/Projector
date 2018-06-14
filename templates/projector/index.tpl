@@ -6,6 +6,7 @@
 {/block}
 
 {block 'main_block'}
+    {* External dependencies: underscore, jQuery *}
     {$.dependency_js('http://unpkg.com/vue')}
     {$.dependency_js('modules/dist/Projector/backend/js/editor.js')}
     {$.dependency_js('modules/dist/Projector/backend/js/field.js')}
