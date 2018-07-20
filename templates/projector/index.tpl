@@ -8,11 +8,11 @@
 {block 'main_block'}
     {* External dependencies: underscore, jQuery *}
     {$.dependency_js('http://unpkg.com/vue')}
-    {$.dependency_js('modules/dist/Projector/backend/js/editor.js')}
-    {$.dependency_js('modules/dist/Projector/backend/js/field.js')}
-    {$.dependency_js('modules/dist/Projector/backend/js/model.js')}
-    {$.dependency_js('modules/dist/Projector/backend/js/relation.js')}
-    {$.dependency_js('modules/dist/Projector/backend/css/projector.css')}
+    {$.dependency_js('Projector/backend/js/editor.js', 'modules')}
+    {$.dependency_js('Projector/backend/js/field.js', 'modules')}
+    {$.dependency_js('Projector/backend/js/model.js', 'modules')}
+    {$.dependency_js('Projector/backend/js/relation.js', 'modules')}
+    {$.dependency_js('Projector/backend/css/projector.css', 'modules')}
 
     {ignore}
         <div id="scheme-editor">
